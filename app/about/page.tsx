@@ -29,12 +29,12 @@ export default function AboutPage() {
         </h2>
 
         <ul className="space-y-3">
-          <li>• Software Engineering</li>
-          <li>• Artificial Intelligence</li>
-          <li>• Business Intelligence</li>
-          <li>• System Design</li>
-          <li>• Web Development</li>
-          <li>• Technical Writing</li>
+          <li>Software Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Business Intelligence</li>
+          <li>System Design</li>
+          <li>Web Development</li>
+          <li>Technical Writing</li>
         </ul>
       </div>
     </section>
