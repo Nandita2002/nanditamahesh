@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Personal website of Nandita Mahesh.",
 };
+<meta name="google-site-verification" content="51UzXZJh9Dw8QAis8F-e_eLoiZ-shHdew_hexblbGfg" />
 
 export default function RootLayout({
   children,
