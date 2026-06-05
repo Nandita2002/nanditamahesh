@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Hero from "@/components/Hero";
+import Footer from "@/components/layout/footer";
+import Navbar from "@/components/layout/navbar";
 
-import Navbar from "@/app/layout/navbar";
-import Footer from "@/app/layout/footer";
+
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nanditamahesh.xyz"),
+  metadataBase: new URL("https://www.nanditamahesh.xyz"),
 
   title: {
     default: "Nandita Mahesh",
@@ -13,35 +15,53 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Personal website of Nandita Mahesh. Software Engineer exploring software engineering, artificial intelligence, business intelligence, web development, and emerging technologies.",
+    "Building, learning and documenting the journey. Personal website of Nandita Mahesh — Software Engineer, MBA Student, Product Builder and Active Learner.",
 
   keywords: [
     "Nandita Mahesh",
     "Software Engineer",
-    "Web Developer",
-    "Artificial Intelligence",
+    "MBA Student",
     "Business Intelligence",
-    "Java Developer",
+    "Web Developer",
+    "Product Builder",
+    "Active Learner",
     "Portfolio",
+    "Technology",
+    "Writing",
   ],
 
-  authors: [{ name: "Nandita Mahesh" }],
+  authors: [
+    {
+      name: "Nandita Mahesh",
+    },
+  ],
 
   creator: "Nandita Mahesh",
 
   openGraph: {
     title: "Nandita Mahesh",
     description:
-      "Personal website of Nandita Mahesh.",
-    url: "https://nanditamahesh.xyz",
+      "Building, learning and documenting the journey.",
+    url: "https://www.nanditamahesh.xyz",
     siteName: "Nandita Mahesh",
     locale: "en_US",
     type: "website",
   },
 
+  twitter: {
+    card: "summary_large_image",
+    title: "Nandita Mahesh",
+    description:
+      "Building, learning and documenting the journey.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   verification: {
-    google:
-      "51UzXZJh9Dw8QAis8F-e_eLoiZ-shHdew_hexblbGfg",
+    google: "51UzXZJh9Dw8QAis8F-e_eLoiZ-shHdew_hexblbGfg",
   },
 };
 
@@ -51,11 +71,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-
-        <main>{children}</main>
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen bg-white text-zinc-900 antialiased">
+    
+<Navbar />
+        <main>{children}
+        </main>
 
         <Footer />
       </body>
